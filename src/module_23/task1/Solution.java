@@ -1,10 +1,18 @@
 package module_23.task1;
 
+import java.util.Scanner;
+
 public class Solution {
-    public static final String NUMBER = "12345678";
-    public static final String COMMA = ",";
 
     public static void main(String[] args) {
-        System.out.println(NUMBER.replaceAll("(?<=\\d)(?=(\\d{3})+$)",COMMA));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число с клавиатуры: ");
+
+        if (scanner.hasNext("^\\d+$")) {
+            String number = scanner.nextLine();
+            System.out.println(number.replaceAll("(?<=\\d)(?=(\\d{3})+$)",","));
+        } else {
+            System.out.println("Введите число!");
+        }
     }
 }
