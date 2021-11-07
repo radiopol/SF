@@ -17,7 +17,7 @@ public class Solution {
         for (int i = 1; i <= N; i++) {
             summ += (Math.pow(x, 2) + 1) / i;
         }
-        System.out.println("come on");
+        System.out.println("come on, dude");
         return summ;
     }
 
