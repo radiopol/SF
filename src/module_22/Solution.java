@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Solution {
 
     public static void main(String[] args) {
-        String text = "У Сени, Вани и Алексея в сенях сом с усами";
+        String text = "У Сени, Вани, Дани и Алексея в сенях сом с усами";
         Pattern pattern = Pattern.compile("\\b[Сс][а-яА-Я]*?\\b");
         Matcher matcher = pattern.matcher(text);
 
